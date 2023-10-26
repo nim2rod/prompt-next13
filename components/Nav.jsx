@@ -9,6 +9,8 @@ const Nav = () => {
     
     const isUserLoggedIn = true
     const [providers, setProviders] = useState(null)
+    const [toggleDropDown, settoggleDropDown] = useState(false)
+
     useEffect(()=>{
         const setProviders = async ()=> {
             const response = await getProviders()
@@ -31,7 +33,8 @@ const Nav = () => {
             <p className="logo_text">promtopia</p>
             </Link>
 
-            {/*mobile navigation */} 
+        {/*desktop navigation */}  
+           
             <div className="sm:flex hidden">
                 {isUserLoggedIn ? (
                     <div className="flex gap-3 md:gap-5">
@@ -71,6 +74,41 @@ const Nav = () => {
                 )
             }
             </div> 
+
+        {/*mobile navigation */}  
+            <div className="sm:hidden flex relative">
+            {isUserLoggedIn ? (
+                <div className="flex">
+                    <Image
+                            src="/assets/images/logo.svg"
+                            width={37}
+                            height ={37}
+                            alt = "profile"
+                            className = "rounded-full"
+                            onClick={()=>setToggleDropdown((prev)=> !prev)}
+                            />
+                </div>
+            ):(
+                <>
+                {providers && 
+                Object.values(providers).map((provider)=>
+                (
+                    <button 
+                    type="button"
+                    key={provider.name}
+                    onClick ={()=>signIn(provider.id)}
+                    className="black_btn"
+                    >
+                    Sign In
+                    </button>
+                )
+                )
+                }
+                </>
+            )
+            }
+            </div>
+         
         </nav>
   )
 }
