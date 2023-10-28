@@ -1,5 +1,7 @@
 import NextAuth from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
+import User from '@models/user'
+import { connectToDB } from '@utils/database.js'
 
 const handler = NextAuth({
     providers: [
@@ -9,15 +11,32 @@ const handler = NextAuth({
         })
     ],
     async session({ session }) {
- 
+
     },
-    async signIn({profile}){
+    async signIn({ profile }) {
         try {
-            
+            await connectToDB()
+            // check if user is already exist
+            const userExists = await User.findOne({
+                email: profile.email
+            })
+
+            // if not - create new user
+            if (!userExists) {
+                await User.create({
+                    email: profile.email,
+                    username: profile.name.replace(" ", "").
+                        toLowerCase(),
+                    image: profile.picture
+                })
+            }
+
+            return true
         } catch (error) {
-            
+            console.log(error);
+            return false
         }
     }
 })
 
-export {handler as GET, handler as POST}
+export { handler as GET, handler as POST }
