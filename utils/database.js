@@ -2,16 +2,16 @@ import mongoose from 'mongoose'
 
 let isConnected = false
 
-export const connectToDB = async()=>{
-    mongoose.set('strictQuery',true)
+export const connectToDB = async () => {
+    mongoose.set('strictQuery', true)
 
-    if(isConnected){
+    if (isConnected) {
         console.log('MongoDB is already connected')
         return
     }
 
     try {
-        await mongoose.connect(procees.env.MONGODB_URI,{
+        await mongoose.connect(process.env.MONGODB_URI, {
             dbName: "share_prompt",
             useNewUrlParser: true,
             useUnifiedTopology: true

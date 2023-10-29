@@ -15,5 +15,4 @@ const nextConfig = {
         return config
     }
 }
-//check
 module.exports = nextConfig
