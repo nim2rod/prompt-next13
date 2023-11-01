@@ -1,14 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-// import { useSession } from 'next-auth/react'
 import { useRouter, useSearchParams } from 'next/navigation'
 
 import Form from '@components/Form'
 
 const EditPrompt = () => {
     const router = useRouter()
-    // const { data: session } = useSession()
     const searchParams = useSearchParams()
     const promptId = searchParams.get('id')
 
@@ -36,19 +34,20 @@ const EditPrompt = () => {
     const updatePrompt = async (e) => {
         console.log('e', e);
         e.preventDefault()
-        setSubmitting(true)
+        setSubmitting(true) 
+        
+        if(!promptId) return alert('prompt ID is not found')
 
         try {
-            const response = await fetch('/api/prompt/new',
+            const response = await fetch(`/api/prompt/${promptId}`,
                 {
-                    method: 'POST',
+                    method: 'PATCH',
                     body: JSON.stringify({
                         prompt: post.prompt,
-                        userId: session?.user.id,
                         tag: post.tag,
                     })
                 })
-            console.log('response', response);
+
             if (response.ok) {
                 router.push('/')
             }
