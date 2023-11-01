@@ -41,7 +41,6 @@ export const PATCH = async(request, {params})=>{
 }
 
  // DELETE
-
  export const DELETE = async(request, {params})=>{
     try {
         await connectToDB()
