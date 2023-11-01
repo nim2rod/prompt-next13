@@ -35,11 +35,24 @@ export const PATCH = async(request, {params})=>{
         return new Response(JSON.stringify(existingPrompt),{
             status:200 })
     } catch (error) {
-        return new Response('Faild to fetch all prompts',{
+        return new Response('Faild to fetch all update',{
             status: 500 })
     }
 }
 
  // DELETE
+
+ export const DELETE = async(request, {params})=>{
+    try {
+        await connectToDB()
+
+        await Prompt.findByIdAndRemove(params.id) // build in command
+        
+        return new Response("Prompt deleted successfully", 
+        {status:200})
+    } catch (error) {
+        return new Response('faild to delete', {status:500})
+    }
+ }
 
  
