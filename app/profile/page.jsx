@@ -22,7 +22,7 @@ const MyProfile = () => {
     }, [])  
 
     const handleEdit =()=>{
-
+        
     }
 
     const handleDelete =  async ()=>{
