@@ -1,3 +1,9 @@
+![Screen Shot 2023-11-02 at 20 31 21](https://github.com/nim2rod/first_docker/assets/106229019/410bc3b2-4b82-460f-8151-5a572ddc340d)
+![Screen Shot 2023-11-02 at 20 31 46](https://github.com/nim2rod/first_docker/assets/106229019/e22f0f32-3eab-49c9-a05e-fc5174f2be04)
+![Screen Shot 2023-11-02 at 20 32 19](https://github.com/nim2rod/first_docker/assets/106229019/cb225a94-5a75-41fc-9e11-ac667642d621)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
