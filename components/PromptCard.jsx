@@ -19,11 +19,23 @@ handleEdit, handleDelete}) => {
     setTimeout(()=>setCopied(''),3000);
   }
 
+  const handleProfileClick = ()=>{
+    // 2 options: myProfile  or    userProfile
+    (post.creator._id === session?.user.id) ? (
+      router.push(`profile`)
+    ) : (
+      router.push(`profile/${post.creator._id}?name=${post.creator.username}`)
+      
+    )
+  }
+
   return (
     <div className='prompt_card'>
         <div className='flex justify-between items-start gap-5'>
             <div className='flex-1 flex justify-start
-            items-center gap-3 cursor-pointer'>
+            items-center gap-3 cursor-pointer'
+            onClick={handleProfileClick}
+            >
               <Image
                 src={post.creator.image}
                 alt="user_image"
