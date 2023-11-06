@@ -1,12 +1,5 @@
 https://github.com/nim2rod/prompt-next13/assets/106229019/664b2c1c-9579-4dd7-bc91-67561282bc4d
 
-
-![Screen Shot 2023-11-02 at 20 31 21](https://github.com/nim2rod/first_docker/assets/106229019/410bc3b2-4b82-460f-8151-5a572ddc340d)
-![Screen Shot 2023-11-02 at 20 31 46](https://github.com/nim2rod/first_docker/assets/106229019/e22f0f32-3eab-49c9-a05e-fc5174f2be04)
-![Screen Shot 2023-11-02 at 20 32 19](https://github.com/nim2rod/first_docker/assets/106229019/cb225a94-5a75-41fc-9e11-ac667642d621)
-
-
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 A next.js 13 project - Write with the help of the JavaScript Mastery youtube channel. 
@@ -57,3 +50,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+![Screen Shot 2023-11-02 at 20 31 21](https://github.com/nim2rod/first_docker/assets/106229019/410bc3b2-4b82-460f-8151-5a572ddc340d)
+![Screen Shot 2023-11-02 at 20 31 46](https://github.com/nim2rod/first_docker/assets/106229019/e22f0f32-3eab-49c9-a05e-fc5174f2be04)
+![Screen Shot 2023-11-02 at 20 32 19](https://github.com/nim2rod/first_docker/assets/106229019/cb225a94-5a75-41fc-9e11-ac667642d621)
