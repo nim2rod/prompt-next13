@@ -6,6 +6,16 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+A next.js 13 project - Write with the help of the JavaScript Mastery youtube channel. 
+
+## In the app:
+- Google login with 'next-auth'
+- Connect to mongoDB and Atlas cloud.
+- Abilty to add / edit / delete / copy prompt's.
+- Search bar.
+- profile page and other users page - reuseble coponents. 
+
+
 ## Getting Started
 
 First, run the development server:
