@@ -11,13 +11,14 @@ A next.js 13 project - Write with the help of the JavaScript Mastery youtube cha
 ## In the app:
 - Google login with 'next-auth' connect and add User's and Prompt's directly to the Data- 
   Base with Schema from mongoose.
-- Dynamic routes
+- Dynamic routes.
 - Connect to mongoDB and Atlas cloud.
 - Abilty to add / edit / delete / copy prompt's.
 - Search bar.
 - Profile page and other users page - Reuseble Components. 
 - Deploy with Vrecel.
 - Link to the Live project: https://prompt-next13.vercel.app/
+- Design with Tailwind.
 
 ## Getting Started
 
