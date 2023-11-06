@@ -9,12 +9,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 A next.js 13 project - Write with the help of the JavaScript Mastery youtube channel. 
 
 ## In the app:
-- Google login with 'next-auth'
+- Google login with 'next-auth' connect and add User's and Prompt's directly to the Data- 
+  Base with Schema from mongoose.
+- Dynamic routes
 - Connect to mongoDB and Atlas cloud.
 - Abilty to add / edit / delete / copy prompt's.
 - Search bar.
-- profile page and other users page - reuseble coponents. 
-
+- Profile page and other users page - Reuseble Components. 
+- Deploy with Vrecel.
+- Link to the Live project: https://prompt-next13.vercel.app/
 
 ## Getting Started
 
